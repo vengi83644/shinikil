@@ -34,6 +34,66 @@
             }
         </style>
     </noscript>
+    <style type="text/css">
+        .scroll-down {
+            opacity: 1;
+            -webkit-transition: all .5s ease-in 3s;
+            transition: all .5s ease-in 3s;
+        }
+        
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -16px;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #FFF;
+            background-size: 14px auto;
+            border-radius: 50%;
+            z-index: 2;
+            -webkit-animation: bounce 2s infinite 2s;
+            animation: bounce 2s infinite 2s;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+        }
+        
+        .scroll-down:before {
+            position: absolute;
+            top: calc(50% - 6px);
+            left: calc(50% - 4px);
+            transform: rotate(-45deg);
+            display: block;
+            width: 8px;
+            height: 8px;
+            content: "";
+            border: 2px solid white;
+            border-width: 0px 0 2px 2px;
+        }
+        
+        @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+            60% {
+                -webkit-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                transform: translateY(-5px);
+            }
+        }
+    </style>
 </head>
 
 <body id="top" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
@@ -49,6 +109,9 @@
                     </div>
                 </div>
             </div>
+            <section>
+                <a href="#" class="scroll-down" address="true"></a>
+            </section>
             <div class="ww-nav-bar sticky-top bg-light">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
@@ -57,7 +120,7 @@
                                 <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"></path>
                             </svg>
                         </a>
-                        <h1 style="margin-left: 10px;" class="h2">
+                        <h1 style="" class="h2 ms-2">
                             <a class="pl-4 navbar-brand" href="#">#SHINIKIL - Becoming one
 
                             </a>
@@ -77,13 +140,13 @@
                     </div>
                 </nav>
             </div>
-            <div class="ww-section" id="couple">
+            <div class="ww-section py-3" id="couple">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Groom &amp; Bride</h2>
                     <div class="row text-center">
                         <div class="col-md-6">
                             <div class="mt-3">
-                                <img loading="lazy" class="img-fluid aos-init" src="resources/groom.jpg" alt="Groom" data-aos="flip-left" data-aos-duration="1000">
+                                <img loading="lazy" class="img-fluid aos-init" src="resources/groom_optimized.jpg" alt="Groom" data-aos="flip-left" data-aos-duration="1000">
                                 <p class="pt-3 text-left text-muted">Hi I am Nikil.</p>
                                 <h3 class="h2 ww-title">Nikil</h3>
                                 <div class="ww-social-links">
@@ -95,7 +158,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mt-3">
-                                <img loading="lazy" class="img-fluid aos-init" src="resources/bride.jpg" alt="Bride" data-aos="flip-right" data-aos-duration="1000">
+                                <img loading="lazy" class="img-fluid aos-init" src="resources/bride_optimized.jpg" alt="Bride" data-aos="flip-right" data-aos-duration="1000">
                                 <p class="pt-3 text-left text-muted">Hi I am Shiny.</p>
                                 <h3 class="h2 ww-title">Shiny</h3>
                                 <div class="ww-social-links">
@@ -109,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ww-section bg-light" id="events">
+            <div class="ww-section py-3 bg-light" id="events">
                 <div class="container ww-wedding-event">
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Wedding Events</h2>
                     <div class="row">
@@ -130,12 +193,12 @@
                                 </ul>
                                 <p>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.220086551863!2d80.22186801482319!3d13.085233590781453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526426aaaaaaab%3A0x6bef03ce3f9da69f!2sT%20E%20L%20C%20Anbunathar%20Lutheran%20Church!5e0!3m2!1sen!2sin!4v1633021337688!5m2!1sen!2sin"
-                                        width="85%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/wedding-party.jpg" alt="Wedding Party" data-aos="fade-down-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/wedding-party_optimized.jpg" alt="Wedding Party" data-aos="fade-down-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -160,12 +223,12 @@
                                 </ul>
                                 <p>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.259195902438!2d80.25758411529385!3d13.082752665968256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265e1b345ed71%3A0x57a499d4d9f2f7!2sBKN%20Auditorium.!5e0!3m2!1sen!2sin!4v1633028562984!5m2!1sen!2sin"
-                                        width="85%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/reception.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/reception_optimized.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                     <div class="row">
@@ -190,17 +253,17 @@
                                 </ul>
                                 <p>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.988699747533!2d78.63076331528403!3d10.812176261488256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa5fa035023f0d%3A0x6fb80ffde100ed43!2sMRJ%20Mahal%20Function%20Hall!5e0!3m2!1sen!2sin!4v1633028606743!5m2!1sen!2sin"
-                                        width="85%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/trichy-reception.JPG" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/trichy-reception_optimized.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ww-section bg-light" id="video">
+            <div class="ww-section py-3 bg-light" id="video">
                 <div class="container ww-wedding-event">
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Celebrating Love & Happiness</h2>
                     <div class="row">
@@ -211,7 +274,7 @@
                 </div>
             </div>
 
-            <!--  <div class="ww-section" id="people">
+            <!--  <div class="ww-section py-3" id="people">
                 <div class="container ww-couple-friends">
                     <h2 class="h1 text-center pt-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Groomsmen &amp; Bridesmaids</h2>
                     <div class="carousel slide aos-init" id="ww-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">-->
@@ -225,7 +288,7 @@
             <!--  <div class="row">
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-1.jpg" alt="Groom Men 1">
+                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-1_optimized.jpg" alt="Groom Men 1">
                                             <div class="card-body text-center">
                                                 <div class="h5">Bryan Berry</div>
                                                 <p class="mb-0 text-muted">Best Friend</p>
@@ -241,7 +304,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-2.jpg" alt="Groom Men 2">
+                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-2_optimized.jpg" alt="Groom Men 2">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Kevin Johnston</div>
                                                 <p class="mb-0 text-muted">Room Mate</p>
@@ -257,7 +320,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-3.jpg" alt="Groom Men 3">
+                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-3_optimized.jpg" alt="Groom Men 3">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Arthur Wright</div>
                                                 <p class="mb-0 text-muted">Friend</p>
@@ -273,7 +336,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-3.jpg" alt="Groom Men 3">
+                                            <img loading="lazy" class="card-img-top" src="resources/groom-men-3_optimized.jpg" alt="Groom Men 3">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Arthur Wright</div>
                                                 <p class="mb-0 text-muted">Friend</p>
@@ -294,7 +357,7 @@
             <!--  <div class="row">
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-1.jpg" alt="Bride Maid 1">
+                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-1_optimized.jpg" alt="Bride Maid 1">
                                             <div class="card-body text-center">
                                                 <div class="h5">Rachel Lawson</div>
                                                 <p class="mb-0 text-muted">Best Friend</p>
@@ -310,7 +373,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-2.jpg" alt="Bride Maid 2">
+                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-2_optimized.jpg" alt="Bride Maid 2">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Betty George</div>
                                                 <p class="mb-0 text-muted">Room Mate</p>
@@ -326,7 +389,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-3.jpg" alt="Bride Maid 3">
+                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-3_optimized.jpg" alt="Bride Maid 3">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Emma Snyder</div>
                                                 <p class="mb-0 text-muted">Friend</p>
@@ -342,7 +405,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card d-block mb-3">
-                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-3.jpg" alt="Bride Maid 3">
+                                            <img loading="lazy" class="card-img-top" src="resources/bride-maid-3_optimized.jpg" alt="Bride Maid 3">
                                             <div class="card-body text-center">
                                                 <div class="h5 text-center">Emma Snyder</div>
                                                 <p class="mb-0 text-muted">Friend</p>
@@ -362,13 +425,13 @@
                     </div>
                 </div>
             </div>-->
-            <div class="ww-section bg-light" id="gallery">
+            <div class="ww-section py-3 bg-light" id="gallery">
                 <div class="ww-photo-gallery">
                     <div class="container">
                         <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Photo Gallery</h2>
                         <div class="col-md-12 text-center ww-category-filter mb-4">
                             <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="all">
-                                All Photos
+                                All 
                             </a>
                             <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="bride">
                               Shiny
@@ -386,103 +449,103 @@
                         <div class="ww-gallery aos-init" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
                             <div class="card-columns">
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_1.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_1.JPG">
+                                    <a href="resources/bride_1_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_1_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_2.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_2.JPG">
+                                    <a href="resources/bride_2_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_2_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_3.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_3.JPG">
+                                    <a href="resources/bride_3_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_3_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_4.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_4.JPG">
+                                    <a href="resources/bride_4_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_4_optimized.jpg">
                                     </a>
                                 </div>
                                 <!--                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_5.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_5.JPG">
+                                    <a href="resources/bride_5_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_5_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_6.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_6.JPG">
+                                    <a href="resources/bride_6_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_6_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_7.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_7.JPG">
+                                    <a href="resources/bride_7_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_7_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;bride&quot;]">
-                                    <a href="resources/bride_8.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/bride_8.JPG">
+                                    <a href="resources/bride_8_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/bride_8_optimized.jpg">
                                     </a>
                                 </div> -->
                                 <div class="card" data-groups="[&quot;groom&quot;]">
-                                    <a href="resources/groom_1.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/groom_1.JPG">
+                                    <a href="resources/groom_1_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/groom_1_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;groom&quot;]">
-                                    <a href="resources/groom_2.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/groom_2.JPG">
+                                    <a href="resources/groom_2_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/groom_2_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;groom&quot;]">
-                                    <a href="resources/groom_3.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/groom_3.JPG">
+                                    <a href="resources/groom_3_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/groom_3_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_1.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_1.JPG">
+                                    <a href="resources/engagement_1_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_1_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_2.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_2.JPG">
+                                    <a href="resources/engagement_2_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_2_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_3.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_3.JPG">
+                                    <a href="resources/engagement_3_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_3_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_4.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_4.JPG">
+                                    <a href="resources/engagement_4_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_4_optimized.jpg">
                                     </a>
                                 </div>
                                 <!--                            <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_5.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_5.JPG">
+                                    <a href="resources/engagement_5_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_5_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;engagement&quot;]">
-                                    <a href="resources/engagement_6.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/engagement_6.JPG">
+                                    <a href="resources/engagement_6_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/engagement_6_optimized.jpg">
                                     </a>
                                 </div> -->
                                 <div class="card" data-groups="[&quot;us&quot;]">
-                                    <a href="resources/us_1.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/us_1.JPG">
+                                    <a href="resources/us_1_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/us_1_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;us&quot;]">
-                                    <a href="resources/us_2.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/us_2.JPG">
+                                    <a href="resources/us_2_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/us_2_optimized.jpg">
                                     </a>
                                 </div>
                                 <div class="card" data-groups="[&quot;us&quot;]">
-                                    <a href="resources/us_3.JPG" data-toggle="lightbox" data-gallery="ww-gallery">
-                                        <img loading="lazy" class="img-fluid" src="resources/us_3.JPG">
+                                    <a href="resources/us_3_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/us_3_optimized.jpg">
                                     </a>
                                 </div>
                             </div>
@@ -490,7 +553,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ww-section ww-rsvp-detail text-white" id="contact" style="margin: 20px 0; padding: 0;">
+            <div class="ww-section py-3 ww-rsvp-detail text-white" id="contact" style="margin: 20px 0; padding: 0;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 align-items-center justify-content-center" style="text-align: center; font-size: 80px;">
@@ -508,6 +571,16 @@
     <script src="resources/aos.js"></script>
     <script src="resources/ekko-lightbox.min.js"></script>
     <script src="resources/main.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.scroll-down').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('.sticky-top').offset().top
+                }, 'slow');
+                return false;
+            });
+        });
+    </script>
 
 </body>
 

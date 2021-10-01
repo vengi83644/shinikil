@@ -3,7 +3,7 @@ body {
 }
 
 .ww-home-page {
-    background: url('../resources/bg.JPG') no-repeat center center;
+    background: url('../resources/bg_optimized.jpg') no-repeat center center;
     background-size: cover;
     background-position: 70%;
     height: 100vh;
@@ -168,7 +168,7 @@ body {
 }
 
 .ww-section {
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 
 .ww-section a:hover {
