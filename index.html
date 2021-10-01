@@ -105,13 +105,13 @@
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bfb1ba;">
                     <div class="container">
                         <!-- <a href="#"> -->
-                        <svg class="heart" viewBox="0 0 32 29.6" style="width: 25px;top: 1px;left: 0px;">
+                        <!-- <svg class="heart" viewBox="0 0 32 29.6" style="width: 25px;top: 1px;left: 0px;">
                                 <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"></path>
-                            </svg>
+                            </svg> -->
                         <!-- </a> -->
-                        <h1 class="h2 ms-1">
-                            <a style="padding-left: 10px !important;font-family: Courgette;" class="pl-4 navbar-brand" href="#">#SHINIKIL - Becoming one
-
+                        <h1 class="h2 ">
+                            <a style="margin-right: 0 !important; padding-left: 0 !important;font-family: Courgette;" class="pl-4 navbar-brand" href="#">
+                                #SHINIKIL Becoming one
                             </a>
                         </h1>
 
@@ -147,13 +147,13 @@
                 <a href="#" class="scroll-down" address="true"></a>
             </section>
 
-            <div class="ww-section py-3" id="couple">
+            <div class="ww-section py-3" id="couple" style="margin-top: 25px;">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Groom &amp; Bride</h2>
                     <div class="row text-center">
                         <div class="col-md-6">
                             <div class="mt-3">
-                                <img loading="lazy" class="img-fluid aos-init" src="resources/groom_optimized.jpg" alt="Groom" data-aos="flip-left" data-aos-duration="1000">
+                                <img loading="lazy" class="img-fluid aos-init" src="resources/groom_intro_1.jpg" alt="Groom" data-aos="flip-left" data-aos-duration="1000">
                                 <p class="pt-3 text-left text-muted">Hi I am Nikil.</p>
                                 <h3 class="h2 ww-title">Nikil</h3>
                                 <div class="ww-social-links">
@@ -585,7 +585,7 @@
         $(function() {
             $('.scroll-down').click(function() {
                 $('html, body').animate({
-                    scrollTop: $('#couple').offset().top
+                    scrollTop: $('.scroll-down').offset().top
                 }, 'slow');
                 return false;
             });
