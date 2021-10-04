@@ -26,6 +26,8 @@
     <link href="resources/aos.css?v=3" rel="stylesheet">
     <link href="resources/ekko-lightbox.css?v=4" rel="stylesheet">
     <link href="resources/main.css?v=3" rel="stylesheet">
+    <link href="resources/jquery.classycountdown.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/tiagocastro070.css" rel="stylesheet" type="text/css">
     <noscript>
         <style type="text/css">
             [data-aos] {
@@ -111,7 +113,7 @@
                         <!-- </a> -->
                         <h1 class="h2 ">
                             <a style="margin-right: 0 !important; padding-left: 0 !important;font-family: Courgette;" class="pl-4 navbar-brand" href="#">
-                                #SHINIKIL
+                                #SHINIKIL Becoming one
                             </a>
                         </h1>
 
@@ -178,6 +180,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ww-section py-3 " id="countdown" style="font-family: great vibes, cursive;">
+                <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Keep calm and let the countdown begin</h2>
+                <div id="countdown9" class="ClassyCountdownDemo"></div>
+                <div id="tiagocastro070" class="container ClassyCountdownDemo" style="color:  #f04d30 !important;"></div>
             </div>
             <div class="ww-section py-3 bg-light" id="events">
                 <div class="container ww-wedding-event">
@@ -581,6 +588,10 @@
     <script src="resources/aos.js?v=3"></script>
     <script src="resources/ekko-lightbox.min.js?v=3"></script>
     <script src="resources/main.js?v=3"></script>
+    <script src="resources/jquery.knob.js"></script>
+    <script src="resources/jquery.throttle.js"></script>
+    <script src="resources/jquery.classycountdown.js"></script>
+    <script src="resources/tiagocastro070.js"></script>
     <script type="text/javascript">
         $(function() {
             $('.scroll-down').click(function() {
@@ -589,6 +600,69 @@
                 }, 'slow');
                 return false;
             });
+
+            const elm = document.querySelector('#tiagocastro070');
+            const options = {
+                date: '27 Oct 2021 16:00:00',
+                labels: {
+                    days: 'd',
+                    hours: 'h',
+                    minutes: 'm',
+                    seconds: 's'
+                }
+            }
+            const countdown = new Countdown(elm, options).play();
+
+            /* $('#countdown9').ClassyCountdown({
+                end: $.now() + 2043020,
+                now: $.now(),
+                labels: true,
+                style: {
+                    element: "",
+                    textResponsive: .5,
+                    days: {
+                        gauge: {
+                            thickness: .05,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#1abc9c",
+                            lineCap: 'butt'
+                        },
+                        textCSS: 'font-family:Courgette; font-size:25px; font-weight:300; color:#34495e;'
+                    },
+                    hours: {
+                        gauge: {
+                            thickness: .05,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#2980b9",
+                            lineCap: 'round'
+                        },
+                        textCSS: 'font-family:Courgette; font-size:25px; font-weight:300; color:#34495e;'
+                    },
+                    minutes: {
+                        gauge: {
+                            thickness: .05,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#8e44ad",
+                            lineCap: 'round'
+                        },
+                        textCSS: 'font-family:Courgette; font-size:25px; font-weight:300; color:#34495e;'
+                    },
+                    seconds: {
+                        gauge: {
+                            thickness: .05,
+                            bgColor: "rgba(0,0,0,0)",
+                            fgColor: "#f39c12",
+                            lineCap: 'butt'
+                        },
+                        textCSS: 'font-family:Courgette; font-size:25px; font-weight:300; color:#34495e;'
+                    }
+
+                },
+                onEndCallback: function() {
+                    console.log("Time out!");
+                }
+            }); */
+
         });
     </script>
 
