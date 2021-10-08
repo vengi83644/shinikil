@@ -95,6 +95,26 @@
                 transform: translateY(-5px);
             }
         }
+        
+        #tiagocastro070 {
+            font-family: great vibes, cursive;
+            color: white !important;
+            height: 235px;
+        }
+        
+        #countdown_bg_img {
+            background-size: cover;
+            background-image: url(/resources/engagement_4_optimized.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        @media (min-width: 576px) {
+            #tiagocastro070 {
+                height: 635px;
+                font-size: 36px;
+            }
+        }
     </style>
 </head>
 
@@ -125,21 +145,21 @@
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#people">People</a></li> -->
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#video">Video</a></li>
-                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
                                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Follow us</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="ww-home-page" id="home">
+            <div class="ww-home-page" id="home" style="background: url('../resources/bg_optimized_black.jpeg') no-repeat center center; background-size: cover; background-position: 50%;">
                 <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
                     <div class="container ww-announcement-container">
                         <p class="ww-couple-name ww-title aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
                             Nikil &amp; Shiny
                         </p>
                         <img loading="lazy" class="img-fluid mt-1 aos-init aos-animate" src="resources/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
-                        <p class="h2 mt-5 ww-title aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">
+                        <p class="h2 mt-3 ww-title aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">
                             27<sup>th</sup> October, 2021
                         </p>
                     </div>
@@ -151,16 +171,22 @@
             <div class="ww-section py-3 " id="countdown" style="font-family: great vibes, cursive;margin-top: 25px;">
                 <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Let the countdown begin</h2>
                 <div id="countdown9" class="ClassyCountdownDemo"></div>
-                <div id="tiagocastro070" class="container ClassyCountdownDemo" style="color:  #f04d30 !important;"></div>
+                <div class="container=fluid" id="countdown_bg_img">
+                    <div id="tiagocastro070" class="container ClassyCountdownDemo"></div>
+                </div>
             </div>
-            <div class="ww-section py-3" id="couple" style="">
+            <div class="ww-section py-3" id="couple">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Groom &amp; Bride</h2>
                     <div class="row text-center">
                         <div class="col-md-6">
                             <div class="mt-3">
                                 <img loading="lazy" class="img-fluid aos-init" src="resources/groom_intro_1.jpg" alt="Groom" data-aos="flip-left" data-aos-duration="1000">
-                                <!-- <p class="pt-3 text-left text-muted">Hi I am Nikil.</p> -->
+                                <p class="pt-3 text-left text-muted">
+                                    I am Nikil Anandhan. Born in Trichy. I was the bookworm, nerdy class topper, but always with lots of friends. I was an imaginative kid who was always lost in my own fantasy world. I would easily give up huge fortunes and luxuries for something I created
+                                    using my imagination, like a lego toy.
+                                    <br> I am a software engineer but loves movies. I am addicted to video games, cars, StarWars and Game of Thrones. I love being with people and thus ended up making friends with the ultimate people-person I ever met,
+                                    Shiny! I am a simple, fun-loving person who does not fear tomorrow but lives in the moment. I can't wait to walk into the great future with Shiny by my side.</p>
                                 <h3 class="pt-3 h2 ww-title">Nikil</h3>
                                 <div class="ww-social-links">
                                     <a class="btn btn-link" style="font-size: 35px;" target="_blank" href="https://www.instagram.com/nikilanandhan">
@@ -171,14 +197,19 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mt-3">
-                                <img loading="lazy" class="img-fluid aos-init" src="resources/bride_optimized.jpg" alt="Bride" data-aos="flip-right" data-aos-duration="1000">
-                                <!-- <p class="pt-3 text-left text-muted">Hi I am Shiny.</p> -->
+                                <img loading="lazy" class="img-fluid aos-init" src="resources/bride_4_10_2.jpeg" alt="Bride" data-aos="flip-right" data-aos-duration="1000">
+                                <p class="pt-3 text-left text-muted">
+                                    I am Shiny, Born in Chennai, I am in love with the city. Even if you succeed in taking me out of Chennai, you still can't take Chennai out of me. My education map went thus: St. John’s School, UG from Women’s Christian College, and master’s from Panimalar
+                                    Engineering College. A born extrovert, I am vivacious and outgoing. As a student, I was a regular at all culturals, owning the spotlight at all elocutions, extempore, and debates... basically anything that required
+                                    talking! But, I enjoyed Tamil elocution so much that I was a state-level winner too! I have always been an ardent church-goer who believed I was God’s favourite child. May be, that's why I've had such a beautiful blessed
+                                    life.
+                                    <br> Being a people person, HR was my natural choice of profession. My job gives me the independence I value so much and a reason to wake up every morning… Until Nikil crossed my path! And now I look forward to a million
+                                    sparkly tomorrows with him.</p>
                                 <h3 class="pt-3 h2 ww-title">Shiny</h3>
                                 <div class="ww-social-links">
                                     <a class="btn btn-link" style="font-size: 35px;" target="_blank" href="https://www.instagram.com/shiny.preethi18">
                                         <i class="fab fa-instagram" aria-hidden="true"></i>
                                     </a>
-
                                 </div>
                             </div>
                         </div>
@@ -187,17 +218,18 @@
             </div>
             <div class="ww-section py-3 bg-light" id="events">
                 <div class="container ww-wedding-event">
-                    <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Wedding Events</h2>
+                    <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Events</h2>
                     <div class="row">
                         <div class="col-md-7 col-sm-12">
                             <div class="my-3">
-                                <div class="h4">Wedding</div>
+                                <div class="h4" style="font-family: 'Courgette';font-size: 30px;">Wedding</div>
                                 <ul>
                                     <li><i class="text-muted fas fa-map-marker-alt"></i><span class="pl-2 text-muted">T.E.L.C Anbunathar Lutheran Church, Anna Nagar East, Chennai 600102</span></li>
                                     <li class="pt-2">
-                                        <i class="text-muted far fa-calendar-alt"></i><span class="pl-2 text-muted">
-                                            27 Oct 2021, 4:00 PM - 6:00 PM
-                                            <a href="https://goo.gl/maps/pQBbQKSomDY5Hh4v5" target="_blank" style="margin-left: 10px;">
+                                        <i class="text-muted far fa-calendar-alt"></i>
+                                        <span class="pl-2 text-muted" style="font-size: 18px;">
+                                            27 Oct 2021, 4:00 PM - 6:00 PM <br>
+                                            <a href="https://goo.gl/maps/pQBbQKSomDY5Hh4v5" target="_blank" style="margin-left: 0px;">
                                                 <i style="margin-right: 5px;" class="fas fa-map-marker-alt"></i>
                                                 Get Directions
                                             </a>
@@ -211,13 +243,13 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/wedding-party_optimized.jpg" alt="Wedding Party" data-aos="fade-down-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/church.jpg" alt="Wedding Party" data-aos="fade-down-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-7 col-sm-12">
                             <div class="my-3">
-                                <div class="h4">Reception</div>
+                                <div class="h4" style="font-family: 'Courgette';font-size: 30px;">Reception</div>
                                 <ul>
                                     <li>
                                         <i class="text-muted fas fa-map-marker-alt "></i><span class="pl-2 text-muted">
@@ -225,9 +257,10 @@
                                         </span>
                                     </li>
                                     <li class="pt-2">
-                                        <i class="text-muted far fa-calendar-alt "></i><span class="pl-2 text-muted">
-                                            27 Oct 2021, 7:00 PM onwards
-                                            <a href="https://goo.gl/maps/bkKFaWLrb4kcGEb26" target="_blank" style="margin-left: 10px;">
+                                        <i class="text-muted far fa-calendar-alt "></i>
+                                        <span class="pl-2 text-muted" style="font-size: 18px;">
+                                            27 Oct 2021, 7:00 PM onwards <br>
+                                            <a href="https://goo.gl/maps/bkKFaWLrb4kcGEb26" target="_blank" style="margin-left: 0px;">
                                                 <i style="margin-right: 5px;" class="fas fa-map-marker-alt"></i>
                                                 Get Directions
                                             </a>
@@ -241,23 +274,24 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/reception_optimized.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/bkn_hall.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-7 col-sm-12">
                             <div class="my-3">
-                                <div class="h4">Trichy Reception</div>
+                                <div class="h4" style="font-family: 'Courgette';font-size: 30px;">Trichy Reception</div>
                                 <ul>
                                     <li>
-                                        <i class="text-muted fas fa-map-marker-alt "></i><span class="pl-2 text-muted">
+                                        <i class="text-muted fas fa-map-marker-alt "></i>
+                                        <span class="pl-2 text-muted" style="font-size: 18px;">
                                             MRJ Mahal Function Hall, Somarasempettai, Trichy 620102
                                         </span>
                                     </li>
                                     <li class="pt-2">
                                         <i class="text-muted far fa-calendar-alt "></i><span class="pl-2 text-muted">
-                                            1 Nov 2021, 7:00 PM onwards
-                                            <a href="https://goo.gl/maps/PHcqJRvZCrZETkad7" target="_blank" style="margin-left: 10px;">
+                                            1 Nov 2021, 7:00 PM onwards <br>
+                                            <a href="https://goo.gl/maps/PHcqJRvZCrZETkad7" target="_blank" style="margin-left: 0px;">
                                                 <i style="margin-right: 5px;" class="fas fa-map-marker-alt"></i>
                                                 Get Directions
                                             </a>
@@ -271,7 +305,7 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/trichy-reception_optimized.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
+                            <div class="my-5"><img loading="lazy" class="img-fluid aos-init" src="resources/mrj_hall.jpg" alt="Reception" data-aos="fade-up-right" data-aos-duration="1000"></div>
                         </div>
                     </div>
                 </div>
@@ -281,9 +315,11 @@
                     <h2 class="h1 text-center pb-3 ww-title aos-init" data-aos="zoom-in-down" data-aos-duration="1000">Celebrating Love & Happiness</h2>
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/9TFNdC9tDFA?rel=0&modestbranding=1&autohide=1&showinfo=0" title="#shinikil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            <!--<iframe width="100%" height="500" src="https://www.youtube.com/embed/9TFNdC9tDFA?rel=0&modestbranding=1&autohide=1&showinfo=0" title="#shinikil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
-                        </iframe>
+                        </iframe>-->
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/NFvni_w9lFU?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <!-- <iframe width="100%" height="500" rel="0" src="https://www.youtube.com/embed/ljJWrUe9WPY?rel=0&modestbranding=1&autohide=1&showinfo=0" title="#shinikil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe> -->
                         </div>
@@ -472,6 +508,9 @@
                             <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="us">
                                 #shinikil
                             </a>
+                            <a class="btn btn-outline-primary ww-filter-button" href="#" data-filter="prep">
+                                Wedding Preparation
+                            </a>
                         </div>
                         <div class="ww-gallery aos-init" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
                             <div class="card-columns">
@@ -573,6 +612,61 @@
                                 <div class="card" data-groups="[&quot;us&quot;]">
                                     <a href="resources/us_3_optimized.jpg" data-toggle="lightbox" data-gallery="ww-gallery">
                                         <img loading="lazy" class="img-fluid" src="resources/us_3_optimized.jpg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_1.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_1.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_2.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_2.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_3.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_3.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_4.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_4.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_5.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_5.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_6.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_6.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_7.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_7.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_8.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_8.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_9.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_9.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_10.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_10.jpeg">
+                                    </a>
+                                </div>
+                                <div class="card" data-groups="[&quot;prep&quot;]">
+                                    <a href="resources/wedding_prep_11.jpeg" data-toggle="lightbox" data-gallery="ww-gallery">
+                                        <img loading="lazy" class="img-fluid" src="resources/wedding_prep_11.jpeg">
                                     </a>
                                 </div>
                             </div>

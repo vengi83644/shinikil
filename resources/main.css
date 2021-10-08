@@ -3,9 +3,6 @@ body {
 }
 
 .ww-home-page {
-    background: url('../resources/bg_optimized.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: 70%;
     height: 100vh;
     min-height: 480px;
     max-height: 1080px
