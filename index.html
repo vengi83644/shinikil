@@ -106,7 +106,8 @@
             background-size: cover;
             background-image: url(/resources/engagement_4_optimized.jpg);
             background-repeat: no-repeat;
-            background-position: 100% -145%;
+            background-position: 100% 180%;
+            height: 275px;
         }
         
         .countdown__label {
@@ -117,6 +118,12 @@
             font-family: 'Courgette';
         }
         
+        #home {
+            background: url('../resources/bg_optimized_black.jpeg') no-repeat center center;
+            background-size: cover;
+            background-position: 50%;
+        }
+        
         @media (min-width: 576px) {
             #tiagocastro070 {
                 height: 635px;
@@ -124,9 +131,13 @@
             }
             #countdown_bg_img {
                 background-position: 100% 40%;
+                height: 650px;
             }
             .countdown__label {
                 font-size: 20px;
+            }
+            #home {
+                background-position: 50% 35%;
             }
         }
     </style>
@@ -166,7 +177,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="ww-home-page" id="home" style="background: url('../resources/bg_optimized_black.jpeg') no-repeat center center; background-size: cover; background-position: 50%;">
+            <div class="ww-home-page" id="home" style="">
                 <div class="ww-wedding-announcement d-flex align-items-center justify-content-start" style="color: #FF6A33;">
                     <div class="container ww-announcement-container">
                         <p class="ww-couple-name ww-title aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
